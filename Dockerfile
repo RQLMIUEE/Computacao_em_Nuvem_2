@@ -3,10 +3,10 @@
 FROM php:8.2-apache
 
 
-COPY ./var/www/html
+COPY . /var/www/html/
 
 
-RUM docker-php-est-install mysqli pdo pdo_mysqli
+RUN docker-php-ext-install mysqli pdo pdo_mysqli
 
 
 
